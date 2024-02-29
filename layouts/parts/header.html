@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEYONDJateng</title>
+
+    <!-- Bootstrap & Style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/style.css"> -->
+    <link rel="stylesheet" href="./header.css">
+</head>
+<body>
+    
+    <!-- ======= Header ======= -->
+    <header class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="../../index.html" class="logo d-flex align-items-center text-decoration-none">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1>BEYONDJateng</h1>
+        </a>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#" onclick="navigateToCulture()">Culture</a></li>
+            <li><a href="#" onclick="navigateToFoods()">Foods</a></li>
+            </ul>
+        </nav><!-- .navbar -->
+
+        <div class="icon position-relative">
+            <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+            <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+            <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+            <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+
+            <!-- ======= Search Form ======= -->
+            <div class="search-form-wrap js-search-form-wrap">
+            <form action="search-result.html" class="search-form">
+                <span class="icon bi-search"></span>
+                <input type="text" placeholder="Search" class="form-control">
+                <button class="btn js-search-close"><span class="bi-x"></span></button>
+            </form>
+            </div><!-- End Search Form -->
+
+        </div>
+
+        </div>
+
+    </header><!-- End Header -->
+    
+    <!-- Navbar
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <i class="bi bi-bootstrap"></i>
+            <span class="fs-4">BEYONDJateng</span>
+        </a>
+    
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../../index.html" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Destinations</a></li>
+            <li class="nav-item"><a href="#" onclick="navigateToCulture()" class="nav-link">Culture</a></li>
+            <li class="nav-item"><a href="#" onclick="navigateToFoods()" class="nav-link">Foods</a></li>
+        </ul>
+    </nav> -->
+</body>
+</html>
