@@ -33,6 +33,10 @@ body {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.header-nav {
+    height: 90px;
+}
+
 .header {
     height: 90px;
     transition: all 0.5s;
@@ -42,11 +46,6 @@ body {
 
 .header.sticked {
     height: 70px;
-}
-
-.header .logo img {
-    max-height: 40px;
-    margin-right: 6px;
 }
 
 .header .logo h1 {
@@ -111,10 +110,6 @@ body {
 .search-form-wrap.active {
     visibility: visible;
     opacity: 1;
-}
-
-section {
-    scroll-margin-top: 70px;
 }
 
 /*--------------------------------------------------------------

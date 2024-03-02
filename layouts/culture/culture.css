@@ -29,17 +29,38 @@ body {
 }
 
 section {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    /* height: 50vh; */
 }
 
 .cover {
-    /* background-image: url(../../assets/img/culture/rumah-adat-joglo-1.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover; */
-    /* height: 100vh; */
+    /* height: 50vh; */
 }
+
+/* .cover .container .carousel {
+    height: 100vh;
+} */
+
+/* /* .cover .container .carousel .carousel-inner {
+    height: 50vh;
+    border-radius: 10px;
+} */
+
+/* .cover .container .carousel .carousel-inner .carousel-item img {
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+} */
+
+/* .cover .container .carousel .carousel-inner .carousel-item .container .carousel-caption {
+        position: absolute;
+        top: 50vh;
+        transform: translateY(-50%);
+}
+ */ 
+
 
 /* CSS untuk pagination */
 .pagination-buttons {
@@ -59,3 +80,4 @@ section {
 .page-link:hover {
     background-color: #f0f0f0;
 }
+
