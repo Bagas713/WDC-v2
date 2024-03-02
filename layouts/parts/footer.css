@@ -26,8 +26,19 @@ body {
     overscroll-behavior: none;
     font-weight: 300;
     overflow-x: hidden;
+
 }
 
-.container-footer {
+.footer {
     background-color: var(--primary-color);
 }
+
+.row {
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+

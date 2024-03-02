@@ -64,7 +64,6 @@ body {
     font-weight: 600;
     font-family: var(--font-secondary);
     color: rgba(var(--color-black-rgb), 0.4);
-    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {

@@ -8,106 +8,175 @@
     <!-- Bootstrap & Style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- <link rel="stylesheet" href="../../assets/css/style.css"> -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../parts/header.css">
+    <link rel="stylesheet" href="../parts/footer.css">
     <link rel="stylesheet" href="./culture.css">
+
+    <style>
+        /* CSS untuk gambar */
+        .post-image {
+            max-width: 20rem;
+            height: 100%;
+        }
+    </style>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Navbar -->
     <div class="container">
-        <header class="header" id="header">
+        <header class="header-nav" id="header">
             
         </header>
     </div>
 
     <!-- Body -->
-    <main>
-        <section class="cover mt-1">
-            <div class="container">
-                <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+    <section class="cover my-1">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide d-flex justify-content-center align-items-center" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../assets/img/culture/borobudur.jpg" class="img-fluid rounded" alt="">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1>Example headlineasfa.</h1>
+                                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.asdsa</p>
+                                <p><a class="btn btn-md btn-primary" href="#">Sign up today</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../assets/img/culture/rumah-adat-joglo-1.png" class="bd-placeholder-img w-100 h-100 rounded" alt="">
+                    <div class="carousel-item">
+                        <img src="../../assets/img/culture/rumah-joglo.jpg" class="img-fluid rounded" alt="">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1>Example headlineasfa.</h1>
+                                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.asdsa</p>
+                                <p><a class="btn btn-md btn-primary" href="#">Sign up today</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/img/culture/grebeg sudiro event.jpg" class="img-fluid rounded" alt="">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1>Example headlineasfa.</h1>
+                                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.asdsa</p>
+                                <p><a class="btn btn-md btn-primary" href="#">Sign up today</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tambahkan slide-carousel lainnya di sini -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+
+
+            <!-- <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
                             <div class="container">
                                 <div class="carousel-caption text-start">
-                                    <h1>Example headlineasfa.</h1>
-                                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.asdsa</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                                <h1>Example headline.</h1>
+                                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../assets/img/culture/rumah-adat-joglo-1.png" class="bd-placeholder-img w-100 h-100 rounded" alt="">
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h1>Another example headline.</h1>
-                                    <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../assets/img/culture/rumah-adat-joglo-1.png" class="bd-placeholder-img w-100 h-100 rounded opacity-75" alt="">
-                            <div class="container">
-                                <div class="carousel-caption text-end">
-                                    <h1>One more for good measure.</h1>
-                                    <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                                </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Another example headline.</h1>
+                                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                
-                <!-- <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis">
-                    <div class="col-lg-6 px-0">
-                        <h1 class="display-4 fst-italic">Culture atau Budaya</h1>
-                        <p class="lead my-3">adalah cara hidup yang berkembang dan dimiliki oleh sesorang atau sekelompok orang dan diwariskan dari generasi ke generasi namun tidak turun temurun </p>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>One more for good measure.</h1>
+                                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            </div>
+                        </div>
                     </div>
-                </div> -->
-            </div>
-        </section>
-
-        <section class="container-card">
-            <div class="card-culture">
-                <div class="container" id="featured-posts">
-
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> -->
+
+            <!-- <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis">
+                <div class="col-lg-6 px-0">
+                    <h1 class="display-4 fst-italic">Culture atau Budaya</h1>
+                    <p class="lead my-3">adalah cara hidup yang berkembang dan dimiliki oleh sesorang atau sekelompok orang dan diwariskan dari generasi ke generasi namun tidak turun temurun </p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="container-card">
+        <div class="card-culture my-5">
+            <div class="container">
+                <h1>Kebudayaan di Jawa Tengah</h1>
             </div>
+            <div class="container mt-3" id="featured-posts">
 
-            <!-- Pagination buttons -->
-            <div class="pagination-buttons">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination justify-content-center" id="paginationList">
-                    </ul>
-                </nav>
             </div>
-        </section>
+        </div>
 
-
-    </main>
-            
-        
+        <!-- Pagination buttons -->
+        <div class="pagination-buttons">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center" id="paginationList">
+                </ul>
+            </nav>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <div class="container">
-        <footer class="footer" id="footer">
-
-        </footer>
+    <div class="container-footer">
+        <div class="container">
+            <footer class="footer" id="footer">
+    
+            </footer>
+        </div>
     </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Bootstrap & Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -116,47 +185,40 @@
         // Data contoh
         var posts = [
             {
-                image: "../../assets/img/testimonials-1.jpg",
-                title: "Featured Post 1",
-                date: "Nov 12",
-                content: "This is the content of the first featured post."
+                image: "../../assets/img/culture/sarong-clothes.jpg",
+                title: "Pakaian Adat Tradisional",
+                date: "5 Juli 2022",
+                creator: "Krisda Tiofani, Ni Nyoman Wira Widyanti Tim Redaksi",
+                content: "Kebudayaan Jawa Tengah tak bisa lepas dari pakaian adat tradisionalnya. Terdapat berbagai macam pakaian adat, di antaranya jawi jangkep, kebaya. kanigaran, batik, pangsi, surjan, beskap, dan basahan. Pakaian adat Surakarta yang menjadi simbol atau identitas pakaian adat di Provinsi Jawa Tengah. Pakaian adat Jawa Tengah dikelompokkan menjadi dua, yaitu pakaian untuk bangsawan (kerabat keraton) dan pakaian untuk rakyat biasa."
             },
             {
-                image: "../../assets/img/testimonials-1.jpg",
-                title: "Featured Post 2",
-                date: "Nov 13",
-                content: "This is the content of the second featured post."
+                image: "../../assets/img/culture/gatotkaca-dance.jpg",
+                title: "Seni Tari Tradisional",
+                date: "13 Juli 2022",
+                creator: "Krisda Tiofani, Ni Nyoman Wira Widyanti Tim Redaksi",
+                content: "Tari tradisional biasanya merupakan citra dari suatu daerah tertentu yang berkembang sejak dahulu dan tetap dilestarikan sampai sekarang lewat sanggar budaya walau banyak anak muda sekarang lebih memilih tarian modern. Seni tari merupakan ekspresi jiwa manusia melalui gerak ritmis dan estetis. Selain seni, seni tari juga merupakan bagian dari budaya dalam perkembangannya."
             },
             {
-                image: "../../assets/img/testimonials-1.jpg",
-                title: "Featured Post 3",
-                date: "Nov 14",
-                content: "This is the content of the second featured post."
+                image: "../../assets/img/culture/rumah-adat-joglo-1.png",
+                title: "Rumah Adat Jawa Tengah",
+                date: "17 Agustus 2023",
+                creator: "Krisda Tiofani, Ni Nyoman Wira Widyanti Tim Redaksi",
+                content: "Jawa Tengah merupakan salah satu provinsi penting di Pulau Jawa. Selain karena hiruk-pikuk ekonominya, Provinsi ini juga tersohor karena unsur kebudayaannya yang masih terjaga. Salah satu warisan leluhur yang menjadi daya pikat provinsi ini adalah Joglo. Apa Joglo itu? Hakekatnya Joglo adalah sebutan bagi rumah adat Jawa Tengah. Bangunan ini menarik dikaji, baik itu dari segi historis maupun arsitekturnya yang sarat dengan nilai filosofis khas Jawa."
             },
             {
-                image: "../../assets/img/testimonials-1.jpg",
-                title: "Featured Post 4",
-                date: "Nov 15",
-                content: "This is the content of the second featured post."
+                image: "../../assets/img/culture/gambang-music.jpg",
+                title: "Seni Musik Tradisional",
+                date: "15 September 2023",
+                creator: "Krisda Tiofani, Ni Nyoman Wira Widyanti Tim Redaksi",
+                content: "Jawa Tengah sendiri mempunyai sejumlah alat musik tradisional yang termasuk dalam gamelan. Setiap bagiannya memiliki karakteristik dan keunikannya masing-masing. Alat musik tradisional biasanya digunakan untuk acara tertentu. Misalnya prosesi upacara adat, pentas seni budaya, dan lainnya. Selain itu, alat musik tradisional juga kerap dijadikan sebagai media pembelajaran."
             },
             {
-                image: "../../assets/img/testimonials-1.jpg",
-                title: "Featured Post 5",
-                date: "Nov 16",
-                content: "This is the content of the second featured post."
-            },
-            {
-                image: "../../assets/img/testimonials-1.jpg",
-                title: "Featured Post 6",
-                date: "Nov 17",
-                content: "This is the content of the second featured post."
-            },
-            {
-                image: "../../assets/img/testimonials-1.jpg",
-                title: "Featured Post 7",
-                date: "Nov 18",
-                content: "This is the content of the second featured post."
-            },
+                image: "../../assets/img/culture/grebeg sudiro event.jpg",
+                title: "Upacara Adat",
+                date: "29 Februari 2024",
+                creator: "Krisda Tiofani, Ni Nyoman Wira Widyanti Tim Redaksi",
+                content: "Kebudayaan ini memiliki berbagai ragam, mulai dari yang mempunyai keterkaitan dengan kebiasaan, adat istiadat, hingga yang memiliki hibungan dengan ritual keagamaan. Tradisi akan terus berjalan apabila tetap dilestarikan dan dihormati keberadaannya. Walau demikian, apabila tradisi tersebut tidak dilakukan lagi, maka tradisi tersebut dapat punah atau menghilang dengan sendirinya."
+            }
         ];
 
         var postsPerPage = 3;
@@ -164,17 +226,24 @@
 
         // Fungsi untuk membuat elemen HTML untuk setiap post
         function createPostElement(post) {
+            // Batasi jumlah karakter untuk konten post
+            var maxContentLength = 150;
+            var shortenedContent = post.content.length > maxContentLength ? post.content.substring(0, maxContentLength) + '...' : post.content;
+
             var postHtml = `
             <div class="row mb-2">
-                <div class="col-11 m-auto">
+                <div class="col-lg-11 m-auto">
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col-auto col-md-4">
-                            <img src="${post.image}" class="bd-placeholder-img w-100 h-100" alt="${post.title}">
+                        <div class="col-lg-auto text-center">
+                            <img src="${post.image}" class="bd-placeholder-img post-image rounded" alt="${post.title}">
                         </div>
                         <div class="col p-4 d-flex flex-column position-static">
-                            <h3 class="mb-0">Featured post</h3>
-                            <div class="mb-1 text-body-secondary">${post.date}</div>
-                            <p class="card-text mb-auto">${post.content}</p>
+                            <h2 class="mb-0">${post.title}</h2>
+                            <h6 class="mb-1 text-body-secondary">${post.date}</h6>
+                            <h6 class="mb-1 text-body-secondary">${post.creator}</h6>
+                            <!-- Tampilkan konten yang sudah disingkat -->
+                            <p class="card-text">${shortenedContent}</p>
+                            <!-- Tambahkan tautan ke halaman detail -->
                             <a href="../detailCulture/detailCulture.html" class="icon-link gap-1 icon-link-hover stretched-link">
                                 Continue reading
                                 <svg class="bi"><use xlink:href="#chevron-right"/></svg>
@@ -186,6 +255,7 @@
             `;
             return postHtml;
         }
+
 
         // Fungsi untuk menampilkan post pada halaman tertentu
         function showPosts(pageNumber) {
