@@ -30,11 +30,7 @@ body {
 
 section {
     margin-bottom: 1rem;
-    /* height: 50vh; */
-}
-
-.cover {
-    /* height: 50vh; */
+    min-height: 50vh;
 }
 
 /* .cover .container .carousel {
@@ -61,23 +57,72 @@ section {
 }
  */ 
 
-
-/* CSS untuk pagination */
-.pagination-buttons {
-    margin-top: 20px;
-}
-.page-link {
-    cursor: pointer;
-}
-.page-item.active .page-link {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-.page-item.active .page-link:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-.page-link:hover {
-    background-color: #f0f0f0;
+.post-image {
+    max-width: 20rem;
+    height: 100%;
 }
 
+.title-culture {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.row .card-custom {
+    color: var(--primary-color);
+    transition: box-shadow 0.3s ease; /* Animasi transisi efek bayangan */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan awal */
+}
+
+.card-custom:hover {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.carousel-caption {
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.caption-card .btn-custom {
+    width: 160px;
+    color: var(--secondary-color);
+    background-color: var(--button-color);
+    border-color: var(--secondary-color);
+}
+
+.caption-card .btn-custom:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border-color: var(--secondary-color);
+}
+
+/* Pagination */
+.pagination-buttons .pagination li a {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    padding: 8px 16px;
+    margin: 0 4px; 
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.pagination-buttons .pagination li.active a {
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+    border-color: var(--button-color);
+}
+
+.pagination-buttons .pagination li.disabled a {
+    pointer-events: none; 
+    opacity: 0.6; 
+}
+
+.pagination-buttons .pagination li a:hover {
+    background-color: var(--hover-color);
+    color: var(--secondary-color);
+}
+
+.pagination-buttons .pagination li.active a:hover {
+    background-color: var(--hover-color); 
+    color: var(--secondary-color);
+    border-color: var(--hover-color); 
+}

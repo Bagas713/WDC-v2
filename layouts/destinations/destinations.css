@@ -8,12 +8,17 @@
   --text-light: #64748b;
   --white: #ffffff;
   --max-width: 1200px;
+  --primary-color-dark: #032539;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.header-nav {
+  background-color: var(--primary-color-dark);
 }
 
 .section__container {

@@ -1,65 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEYONDJateng</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BEYONDJateng</title>
 
-    <!-- Bootstrap & Style -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./header.css">
+        <!-- Bootstrap & Style -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../../layouts/parts/header.css" />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
-    
-    <!-- ======= Header ======= -->
-    <header class="header d-flex align-items-center fixed-top" data-aos="fade-down">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <!-- <script src="https://unpkg.com/@phosphor-icons/web"></script> -->
 
-        <a href="../../index.html" class="logo d-flex align-items-center text-decoration-none">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1>BEYONDJateng</h1>
-        </a>
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container w-100">
+                <a class="navbar-brand" href="../../index.html">BEYONDJateng</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="cont-nav collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="navigateToHome()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="navigateToDestinations()">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="navigateToCulture()">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="navigateToFoods()">Foods</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-        <nav id="navbar" class="navbar">
-            <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="#" onclick="navigateToDestinations()">Destinations</a></li>
-            <li><a href="#" onclick="navigateToCulture()">Culture</a></li>
-            <li><a href="#" onclick="navigateToFoods()">Foods</a></li>
-            </ul>
-        </nav><!-- .navbar -->
+        <script>
+            const navLinks = document.querySelectorAll("nav ul li");
+            const currentPage = window.location.href;
+        
+            navLinks.forEach(link => {
+                if (link.href === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        </script>
 
-        <div class="icon position-relative">
-            <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
-            <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
-            <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
-            <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-
-            <!-- ======= Search Form ======= -->
-            <div class="search-form-wrap js-search-form-wrap">
-            <form action="search-result.html" class="search-form">
-                <span class="icon bi-search"></span>
-                <input type="text" placeholder="Search" class="form-control">
-                <button class="btn js-search-close"><span class="bi-x"></span></button>
-            </form>
-            </div><!-- End Search Form -->
-
-        </div>
-
-        </div>
-
-    </header><!-- End Header -->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+        <!-- Bootstrap & Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>

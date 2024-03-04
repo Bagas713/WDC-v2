@@ -37,8 +37,24 @@ body {
     color: var(--secondary-color);
 }
 
-p {
+.footer p {
     color: var(--secondary-color);
 }
 
+.footer .row .icon .icon-bi {
+    margin: .2rem;
+    color: var(--button-color);
+}
 
+.footer .row .icon a:hover {
+    color: var(--secondary-color);
+}
+
+.footer .row button {
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+}
+.footer .row button:hover {
+    background-color: var(--hover-color);
+    color: var(--button-color);
+}
