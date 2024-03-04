@@ -5,12 +5,20 @@ fetch('../../layouts/parts/header.html').then(snap => snap.text()).then(result =
     header.innerHTML = result;
 })
 
+
+
 //footer
 const footer = document.getElementById("footer");
 
 fetch('../../layouts/parts/footer.html').then(snap => snap.text()).then(result => {
     footer.innerHTML = result;
 })
+
+//Home
+function navigateToHome() {
+    window.location.href = "../../index.html";
+    return false; // Mencegah aksi default tautan
+}
 
 //Destinations
 function navigateToDestinations() {
@@ -21,6 +29,12 @@ function navigateToDestinations() {
 // Culture
 function navigateToCulture() {
     window.location.href = "../../layouts/culture/culture.html";
+    return false; // Mencegah aksi default tautan
+}
+
+//Detail Culture
+function navigateToDetailCulture() {
+    window.location.href = "../../layouts/detailCulture/detailCulture.html";
     return false; // Mencegah aksi default tautan
 }
 
@@ -75,4 +89,3 @@ const scrollRevealOption = {
     ...scrollRevealOption,
     interval: 500,
   });
-  

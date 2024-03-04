@@ -28,6 +28,10 @@ body {
     overflow-x: hidden;
 }
 
+.single-post-content .container .row {
+    color: var(--primary-color);
+}
+
 
 /*--------------------------------------------------------------
 # Posts
@@ -636,4 +640,17 @@ body {
 .comment .reply-meta .text-muted {
     font-family: var(--font-secondary);
     font-size: 12px;
+}
+
+.row .btn-custom {
+    width: 160px;
+    color: var(--secondary-color);
+    background-color: var(--button-color);
+    border-color: var(--secondary-color);
+}
+
+.row .btn-custom:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border-color: var(--secondary-color);
 }
