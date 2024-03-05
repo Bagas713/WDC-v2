@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+:root {
+    --index: calc(1vw + 1vh);
+    --primary-color: #032539;
+    --secondary-color: #FBF3F2;
+    --button-color: #1C768F;
+    --hover-color: #FA991C;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: "Open Sans", sans-serif;
+    overscroll-behavior: none;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: 1rem;
+    
+}
+
+/* .cover .container .carousel {
+    height: 100vh;
+} */
+
+/* /* .cover .container .carousel .carousel-inner {
+    height: 50vh;
+    border-radius: 10px;
+} */
+
+/* .cover .container .carousel .carousel-inner .carousel-item img {
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+} */
+
+/* .cover .container .carousel .carousel-inner .carousel-item .container .carousel-caption {
+        position: absolute;
+        top: 50vh;
+        transform: translateY(-50%);
+}
+ */ 
+
+.post-image {
+    max-width: 20rem;
+    height: 100%;
+}
+
+.title-culture {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.row .card-custom {
+    color: var(--primary-color);
+    transition: box-shadow 0.3s ease; /* Animasi transisi efek bayangan */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan awal */
+}
+
+.card-custom:hover {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.carousel-caption {
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.caption-card .btn-custom {
+    width: 160px;
+    color: var(--secondary-color);
+    background-color: var(--button-color);
+    border-color: var(--secondary-color);
+}
+
+.caption-card .btn-custom:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border-color: var(--secondary-color);
+}
+
+/* Pagination */
+.pagination-buttons .pagination li a {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    padding: 8px 16px;
+    margin: 0 4px; 
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.pagination-buttons .pagination li.active a {
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+    border-color: var(--button-color);
+}
+
+.pagination-buttons .pagination li.disabled a {
+    pointer-events: none; 
+    opacity: 0.6; 
+}
+
+.pagination-buttons .pagination li a:hover {
+    background-color: var(--hover-color);
+    color: var(--secondary-color);
+}
+
+.pagination-buttons .pagination li.active a:hover {
+    background-color: var(--hover-color); 
+    color: var(--secondary-color);
+    border-color: var(--hover-color); 
+}
+
+img {
+    height: 100vh;
+} 
