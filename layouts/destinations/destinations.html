@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEYONDJateng | Destinations</title>
+    <title>BEYONDJateng | Destinasi</title>
 
     <!-- Bootstrap & Style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -25,216 +25,248 @@
 </head>
 
 <body>
+    <div class="header-nav" id="header" data-aos="fade-down"></div>
 
-    <body>
-        <div class="header-nav" id="header" data-aos="fade-down"></div>
+    <div class="d-flex align-items-center justify-content-center header__container cover-destinations" id="home"
+        data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
+        <div class="container">
+            <h1 class="display-3 text-white text-center z-1">Petualangan Tak <span
+                    style="color: #FA991C;">Terlupakan</span> di Lautan Keajaiban <span style="color: #FA991C;">Jawa
+                    Tengah</span>
+            </h1>
+        </div>
+    </div>
 
-        <div class="d-flex align-items-center justify-content-center header__container cover-destinations" id="home" data-aos="fade-up"
-            data-aos-offset="500" data-aos-duration="500">
-            <div class="container">
-                <h1>Explore the beauty of nature Discover the new you</h1>
+    <section class="section__container trending__container" id="trending">
+        <div class="section__header">
+            <h2 class="section__title" data-aos="zoom-in-up">Destinasi Wisata</h2>
+        </div>
+        <div class="trending__grid">
+            <div class="trending__card">
+                <div class="seller__image">
+                    <img src="../../assets/img/destinations/borobudur.jpg" alt="seller" />
+                    <div class="seller__image__content">
+                        <div class="seller__image__footer">
+                            <button class="btn btn-danger" onclick="borobudur()"><i
+                                    class="fa-solid fa-location-dot"></i>
+                                Maps</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>Candi Borobudur</h1>
+                <p>Magelang, Jawa tengah</p>
+                <div class="trending__details">
+                    <div class="price">
+                        <h3>Rp. 50.000</h3>
+                        <p style="color: red;">*harga tiket menyesuaikan</p>
+                    </div>
+                    <div class="trending__ratings">
+                        <div>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-half-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: black;">Borobudur adalah candi atau kuil Buddha terbesar di dunia, sekaligus salah
+                    satu monumen Buddha terbesar di dunia.
+                    Candi Borobudur adalah salah satu peninggalan Kerajaan Mataram Kuno yang terletak di Magelang,
+                    Jawa Tengah.</p>
+            </div>
+            <div class="trending__card">
+                <div class="seller__image">
+                    <img src="../../assets/img/destinations/klenteng.jpeg" alt="seller" />
+                    <div class="seller__image__content">
+                        <div class="seller__image__footer">
+                            <button class="btn btn-danger" onclick="klenteng()"><i class="fa-solid fa-location-dot"></i>
+                                Maps</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Sam Poo Kong</h1>
+                <p>Semarang, Jawa Tengah</p>
+                <div class="trending__details">
+                    <div class="price">
+                        <h3>Rp. 28.000</h3>
+                        <p style="color: red;">*harga tiket menyesuaikan</p>
+                    </div>
+                    <div class="trending__ratings">
+                        <div>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-half-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: black;">Kelenteng Gedung Kuno Sam Poo Kong yaitu bekas tempat persinggahan dan
+                    pendaratan pertama seorang
+                    Laksamana Tiongkok beragama Islam yang bernama Zheng He/Cheng Ho, yang juga dikenal dengan nama
+                    Sam Poo.
+                    Tidak semua anak buah kapal beragama Islam.</p>
+            </div>
+            <div class="trending__card">
+                <div class="seller__image">
+                    <img src="../../assets/img/destinations/dieng.jpg" alt="seller" />
+                    <div class="seller__image__content">
+                        <div class="seller__image__footer">
+                            <button class="btn btn-danger" onclick="dieng()"><i class="fa-solid fa-location-dot"></i>
+                                Maps</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Plato Dieng</h1>
+                <p>Banjarnegara, Jawa Tengah</p>
+                <div class="trending__details">
+                    <div class="price">
+                        <h3>Rp. 10.000</h3>
+                        <p style="color: red;">*harga tiket menyesuaikan</p>
+                    </div>
+                    <div class="trending__ratings">
+                        <div>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-half-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: black;">Dataran Tinggi Dieng terletak di Propinsi Jawa Tengah, dan berada di dua
+                    wilayah Kabupaten Wonosobo dan Banjarnegara.
+                    Dieng dikenal sebagai tempat bersemayamnya para Dewa dan ada juga yang menjuluki negeri diatas
+                    awan begitu banyak sebutan untuk Dieng ini karena keelokan dan Keunikannya. </p>
+            </div>
+            <div class="trending__card">
+                <div class="seller__image">
+                    <img src="../../assets/img/destinations/dieng.jpg" alt="seller" />
+                    <div class="seller__image__content">
+                        <div class="seller__image__footer">
+                            <button class="btn btn-danger" onclick="karimun()"><i class="fa-solid fa-location-dot"></i>
+                                Maps</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Karimunjawa</h1>
+                <p>Kabupaten Jepara, Jawa Tengah</p>
+                <div class="trending__details">
+                    <div class="price">
+                        <h3>Rp. 130.000</h3>
+                        <p style="color: red;">*harga tiket menyesuaikan</p>
+                    </div>
+                    <div class="trending__ratings">
+                        <div>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-half-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: black;">Karimunjawa adalah kepulauan di Laut Jawa yang termasuk dalam Kabupaten
+                    Jepara, Jawa Tengah.
+                    Karimunjawa kini dikembangkan menjadi pesona wisata Taman Laut yang mulai banyak digemari
+                    wisatawan lokal maupun mancanegara.</p>
+            </div>
+            <div class="trending__card">
+                <div class="seller__image">
+                    <img src="../../assets/img/destinations/dieng.jpg" alt="seller" />
+                    <div class="seller__image__content">
+                        <div class="seller__image__footer">
+                            <button class="btn btn-danger" onclick="grojogan()"><i class="fa-solid fa-location-dot"></i>
+                                Maps</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Grojogan Sewu</h1>
+                <p>Tawangmangu, Jawa Tengah</p>
+                <div class="trending__details">
+                    <div class="price">
+                        <h3>Rp. 15.000</h3>
+                        <p style="color: red;">*harga tiket menyesuaikan</p>
+                    </div>
+                    <div class="trending__ratings">
+                        <div>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-half-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: black;">Grojogan Sewu terletak di kaki Gunung Lawu, sehingga memiliki udara yang
+                    sejuk dan masih dikelilingi oleh banyak pepohonan rindang khas pegunungan.
+                    Arti Grojogan dalam bahasa Jawa berarti air terjun dan sèwu berarti seribu. Apabila digabung
+                    Grojogan Sèwu berarti air terjun seribu.
+                    Meskipun air terjunnya di sini hanya ada satu akan tetapi ada beberapa titik air terjun yang
+                    dapat dinikmati.</p>
             </div>
         </div>
+    </section>
 
-        <section class="section__container trending__container" id="trending">
-            <div class="section__header">
-                <h2 class="section__title" data-aos="zoom-in-up">Destinations</h2>
-            </div>
-            <div class="trending__grid">
-                <div class="trending__card">
-                    <div class="seller__image">
-                        <img src="../../assets/img/destinations/borobudur.jpg" alt="seller" />
-                        <div class="seller__image__content">
-                            <div class="seller__image__footer">
-                                <button class="btn" onclick="borobudur()"><i class="fa-solid fa-location-dot"></i>
-                                    Maps</button>
-                            </div>
-                        </div>
-                    </div>
-                    <h1>Candi Borobudur</h1>
-                    <p>Magelang, Jawa tengah</p>
-                    <div class="trending__details">
-                        <div class="price">
-                            <h3>Rp. 50.000</h3>
-                            <p style="color: red;">*harga tiket menyesuaikan</p>
-                        </div>
-                        <div class="trending__ratings">
-                            <div>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-half-fill"></i></span>
-                                <span><i class="ri-star-line"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <p style="color: black;">Candi Borobudur adalah .......</p>
-                </div>
-                <div class="trending__card">
-                    <div class="seller__image">
-                        <img src="../../assets/img/destinations/klenteng.jpeg" alt="seller" />
-                        <div class="seller__image__content">
-                            <div class="seller__image__footer">
-                                <button class="btn" onclick="klenteng()"><i class="fa-solid fa-location-dot"></i>
-                                    Maps</button>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Footer -->
+    <div class="container-footer" data-aos="fade-up" data-aos-duration="500">
+        <div class="container">
+            <footer class="footer" id="footer">
 
-                    <h1>Klenteng Sam Poo Kong</h1>
-                    <p>Semarang, Jawa Tengah</p>
-                    <div class="trending__details">
-                        <div class="price">
-                            <h3>Rp. 28.000</h3>
-                            <p style="color: red;">*harga tiket menyesuaikan</p>
-                        </div>
-                        <div class="trending__ratings">
-                            <div>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-half-fill"></i></span>
-                                <span><i class="ri-star-line"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <p style="color: black;">Klenteng Sam Poo Kong adalah .......</p>
-                </div>
-                <div class="trending__card">
-                    <div class="seller__image">
-                        <img src="../../assets/img/destinations/dieng.jpg" alt="seller" />
-                        <div class="seller__image__content">
-                            <div class="seller__image__footer">
-                                <button class="btn" onclick="dieng()"><i class="fa-solid fa-location-dot"></i>
-                                    Maps</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h1>Dataran Tinggi Dieng</h1>
-                    <p>Banjarnegara, Jawa Tengah</p>
-                    <div class="trending__details">
-                        <div class="price">
-                            <h3>Rp. 10.000</h3>
-                            <p style="color: red;">*harga tiket menyesuaikan</p>
-                        </div>
-                        <div class="trending__ratings">
-                            <div>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-half-fill"></i></span>
-                                <span><i class="ri-star-line"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <p style="color: black;">Dataran Tinggi Dieng adalah .......</p>
-                </div>
-                <div class="trending__card">
-                    <div class="seller__image">
-                        <img src="../../assets/img/destinations/dieng.jpg" alt="seller" />
-                        <div class="seller__image__content">
-                            <div class="seller__image__footer">
-                                <button class="btn" onclick="dieng()"><i class="fa-solid fa-location-dot"></i>
-                                    Maps</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h1>Dataran Tinggi Dieng</h1>
-                    <p>Banjarnegara, Jawa Tengah</p>
-                    <div class="trending__details">
-                        <div class="price">
-                            <h3>Rp. 10.000</h3>
-                            <p style="color: red;">*harga tiket menyesuaikan</p>
-                        </div>
-                        <div class="trending__ratings">
-                            <div>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-half-fill"></i></span>
-                                <span><i class="ri-star-line"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <p style="color: black;">Dataran Tinggi Dieng adalah .......</p>
-                </div>
-                <div class="trending__card">
-                    <div class="seller__image">
-                        <img src="../../assets/img/destinations/dieng.jpg" alt="seller" />
-                        <div class="seller__image__content">
-                            <div class="seller__image__footer">
-                                <button class="btn" onclick="dieng()"><i class="fa-solid fa-location-dot"></i>
-                                    Maps</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h1>Dataran Tinggi Dieng</h1>
-                    <p>Banjarnegara, Jawa Tengah</p>
-                    <div class="trending__details">
-                        <div class="price">
-                            <h3>Rp. 10.000</h3>
-                            <p style="color: red;">*harga tiket menyesuaikan</p>
-                        </div>
-                        <div class="trending__ratings">
-                            <div>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-fill"></i></span>
-                                <span><i class="ri-star-half-fill"></i></span>
-                                <span><i class="ri-star-line"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <p style="color: black;">Dataran Tinggi Dieng adalah .......</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <div class="container-footer" data-aos="fade-up" data-aos-duration="500">
-            <div class="container">
-                <footer class="footer" id="footer">
-
-                </footer>
-            </div>
+            </footer>
         </div>
+    </div>
 
-        <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/main.js"></script>
 
-        <!-- AOS -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-        <!-- Bootstrap & Script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+    <!-- Bootstrap & Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
-        <script>
-            function borobudur() {
-                const mapsURL = 'https://maps.app.goo.gl/EsuLpojqNvsW8d1m8';
+    <script>
+        function borobudur() {
+            const mapsURL = 'https://maps.app.goo.gl/EsuLpojqNvsW8d1m8';
 
-                // Buka Google Maps di tab baru
-                window.open(mapsURL, '_blank');
-            }
-            function klenteng() {
-                const mapsURL = 'https://maps.app.goo.gl/5CJnvonr7Carhfa48';
+            // Buka Google Maps di tab baru
+            window.open(mapsURL, '_blank');
+        }
+        function klenteng() {
+            const mapsURL = 'https://maps.app.goo.gl/5CJnvonr7Carhfa48';
 
-                // Buka Google Maps di tab baru
-                window.open(mapsURL, '_blank');
-            }
-            function dieng() {
-                const mapsURL = 'https://maps.app.goo.gl/HY1nnsjsMUiuNoPV9';
+            // Buka Google Maps di tab baru
+            window.open(mapsURL, '_blank');
+        }
+        function dieng() {
+            const mapsURL = 'https://maps.app.goo.gl/HY1nnsjsMUiuNoPV9';
 
-                // Buka Google Maps di tab baru
-                window.open(mapsURL, '_blank');
-            }
-        </script>
-    </body>
+            // Buka Google Maps di tab baru
+            window.open(mapsURL, '_blank');
+        }
+        function grojogan() {
+            const mapsURL = 'https://maps.app.goo.gl/FW39dUBxo7JihMnK6';
+
+            // Buka Google Maps di tab baru
+            window.open(mapsURL, '_blank');
+        }
+        function karimun() {
+            const mapsURL = 'https://maps.app.goo.gl/zVdzirdvyrzyADMk7';
+
+            // Buka Google Maps di tab baru
+            window.open(mapsURL, '_blank');
+        }
+    </script>
+</body>
 
 </html>

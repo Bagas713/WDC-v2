@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import url("https://db.onlinewebfonts.com/c/996fd53e88dc843489d49583a0354b50?family=GothamRndSSm-Medium");
 
 :root {
     --index: calc(1vw + 1vh);
@@ -8,20 +8,11 @@
     --hover-color: #FA991C;
 }
 
-/* .header-nav {
-    height: 90px;
-    position: fixed;
-} */
 
 .navbar {
     background-color: var(--primary-color);
-    /* height: 80px;
-    position: fixed; */
 }
 
-/* .navbar .container .navbar-brand .navbar-toggler .navbar-toggler-icon {
-    background-color: var(--secondary-color);
-} */
 
 .navbar .container .navbar-brand {
     color: var(--secondary-color);
@@ -66,8 +57,6 @@ nav ul li a {
     transition: all;
     transition-duration: 1000ms;
     border-bottom: 2px solid rgba(255, 68, 0, 0);
-    /* display: inline-block;
-    padding-bottom: 3px; */
 }
 
 nav ul li a:hover {
