@@ -643,7 +643,7 @@ body {
 }
 
 .row .btn-custom {
-    width: 160px;
+    width: 200px;
     color: var(--secondary-color);
     background-color: var(--button-color);
     border-color: var(--secondary-color);
@@ -653,4 +653,9 @@ body {
     color: var(--primary-color);
     background-color: var(--hover-color);
     border-color: var(--secondary-color);
+}
+
+.trending__ratings span {
+    font-size: 0.9rem;
+    color: goldenrod;
 }
