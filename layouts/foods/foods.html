@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BEYONDJateng | Kuliner</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
@@ -21,7 +22,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" data-aos="fade-down">
         <div class="container w-100">
             <a class="navbar-brand" href="../../index.html">BEYONDJateng</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,21 +32,21 @@
             </button>
             <div class="cont-nav collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav text-center">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                             onclick="navigateToHome()">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                            onclick="navigateToDestinations()">Destinations</a>
+                            onclick="navigateToDestinations()">Destinasi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                            onclick="navigateToCulture()">Culture</a>
+                            onclick="navigateToCulture()">Kebudayaan</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                            onclick="navigateToFoods()">Foods</a>
+                            onclick="navigateToFoods()">Kuliner</a>
                     </li>
                 </ul>
             </div>
@@ -55,9 +56,12 @@
     <!-- Foods Body -->
     <div id="wrapper">
         <div id="content">
-            <section class="vh-100 cover-container m-0 position-relative">
-                <div class="d-flex align-items-center justify-content-center w-100 h-100 cover-image">
-                    <h1 class="display-1 text-white text-uppercase text-center">full of <span style="color: #FA991C;">flavor</span> made with <span style="color: #FA991C;">heart</span></h1>
+            <section class="vh-100 cover-container m-0 position-relative" data-aos="fade-up">
+                <div class="d-flex align-items-center justify-content-center w-100 h-100 cover-image z-3">
+                    <h1 class="display-3 text-white text-center z-1" data-aos="fade-in" data-aos-duration="1200">Penuh
+                        dengan <span style="color: #FA991C;">Rasa</span> dibuat dengan <span
+                            style="color: #FA991C;">Hati</span>
+                    </h1>
                 </div>
                 <div class="cover-overlay"></div>
             </section>
@@ -69,22 +73,39 @@
                             <img src="../../assets/img/1 (1).jpeg" class="rounded-4 shadow" alt="1" />
                             <div class="overlay rounded-4 text-wrap">
                                 <div class="overlay-all rounded-4 z-1">
-                                    <p class="p-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                                        quia tenetur
-                                        repellat. Fuga voluptatem incidunt suscipit pariatur repellendus ullam magnam
-                                        doloribus expedita
-                                        vitae quibusdam officiis minus aperiam nulla, aut nam!</p>
+                                    <p class="p-4 fs-5">Gado-gado adalah makanan yang terdiri atas sayur-sayuran,
+                                        kentang, tempe, tahu, telur rebus, dan lain-lain diberi bumbu sambal kacang dan
+                                        sebagainya.</p>
                                 </div>
                                 <div class="w-100 d-block mb-4 ps-4">
-                                    <h1 class="">Tittle</h1>
-                                    <p class="fs-5 fw-lighter">some little description about the foods...</p>
+                                    <h1 class="">Gado-gado</h1>
+                                    <p class="fs-5 fw-lighter">Gado gado merupakan makanan khas yang berasal dari Sunda
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="gallery-box me-1 mb-5">
                         <div class="image-overlay">
-                            <img src="../../assets/img/1 (2).jpeg" class="rounded-4 shadow" alt="1" />
+                            <img src="../../assets/img/foods/trancam.jpg" class="rounded-4 shadow" alt="1" />
+                            <div class="overlay rounded-4 text-wrap">
+                                <div class="overlay-all rounded-4 z-1">
+                                    <p class="p-4 fs-5">Ini adalah jenis gado-gado atau salad sayuran yang terdiri dari
+                                        campuran sayuran segar yang diiris tipis. Sayuran
+                                        tersebut kemudian dicampur dengan parutan kelapa yang segar dan bumbu sambal
+                                        atau bumbu kacang sebagai sausnya</p>
+                                </div>
+                                <div class="w-100 d-block mb-4 ps-4">
+                                    <h1 class="">Trancam</h1>
+                                    <p class="fs-5 fw-lighter">Trancam adalah salah satu hidangan khas dari Jawa Tengah,
+                                        Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-box me-1 mb-5">
+                        <div class="image-overlay">
+                            <img src="../../assets/img/foods/es-mayang.jpeg" class="rounded-4 shadow" alt="1" />
                             <div class="overlay rounded-4 text-wrap">
                                 <div class="overlay-all rounded-4 z-1">
                                     <p class="p-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
@@ -94,26 +115,8 @@
                                         vitae quibusdam officiis minus aperiam nulla, aut nam!</p>
                                 </div>
                                 <div class="w-100 d-block mb-4 ps-4">
-                                    <h1 class="">Tittle</h1>
-                                    <p class="fs-5 fw-lighter">some little description about the foods...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-box me-1 mb-5">
-                        <div class="image-overlay">
-                            <img src="../../assets/img/1 (3).jpeg" class="rounded-4 shadow" alt="1" />
-                            <div class="overlay rounded-4 text-wrap">
-                                <div class="overlay-all rounded-4 z-1">
-                                    <p class="p-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                                        quia tenetur
-                                        repellat. Fuga voluptatem incidunt suscipit pariatur repellendus ullam magnam
-                                        doloribus expedita
-                                        vitae quibusdam officiis minus aperiam nulla, aut nam!</p>
-                                </div>
-                                <div class="w-100 d-block mb-4 ps-4">
-                                    <h1 class="">Tittle</h1>
-                                    <p class="fs-5 fw-lighter">some little description about the foods...</p>
+                                    <h1 class="">Es Selendang Mayang</h1>
+                                    <p class="fs-5 fw-lighter">Minuman menyegarkan yang berasal dari betawi</p>
                                 </div>
                             </div>
                         </div>
@@ -123,87 +126,86 @@
                             <img src="../../assets/img/1 (4).jpeg" class="rounded-4 shadow" alt="1" />
                             <div class="overlay rounded-4 text-wrap">
                                 <div class="overlay-all rounded-4 z-1">
-                                    <p class="p-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                                        quia tenetur
-                                        repellat. Fuga voluptatem incidunt suscipit pariatur repellendus ullam magnam
-                                        doloribus expedita
-                                        vitae quibusdam officiis minus aperiam nulla, aut nam!</p>
+                                    <p class="p-4 fs-5">Dawet adalah minuman berupa campuran air gula, santan, dan
+                                        cendol yang berasal dari desa Jabung, Ponorogo. Minuman dengan rasa manis dan
+                                        gurih ini juga kerap disajikan sebagai menu upacara pernikahan adat suku Jawa.
+                                    </p>
                                 </div>
                                 <div class="w-100 d-block mb-4 ps-4">
-                                    <h1 class="">Tittle</h1>
-                                    <p class="fs-5 fw-lighter">some little description about the foods...</p>
+                                    <h1 class="">Es Dawet</h1>
+                                    <p class="fs-5 fw-lighter">Es satu ini memiliki rasa yang unik dan menyegarkan</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="gallery-box me-1 mb-5">
                         <div class="image-overlay">
-                            <img src="../../assets/img/1 (5).jpeg" class="rounded-4 shadow" alt="1" />
+                            <img src="../../assets/img/foods/sate-tegal.jpg" class="rounded-4 shadow" alt="1" />
                             <div class="overlay rounded-4 text-wrap">
                                 <div class="overlay-all rounded-4 z-1">
-                                    <p class="p-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                                        quia tenetur
-                                        repellat. Fuga voluptatem incidunt suscipit pariatur repellendus ullam magnam
-                                        doloribus expedita
-                                        vitae quibusdam officiis minus aperiam nulla, aut nam!</p>
+                                    <p class="p-4 fs-5">Sate Tegal
+                                        biasanya disajikan dengan lontong (nasi ketan yang dikemas dalam daun pisang),
+                                        irisan bawang merah, dan sambal kacang untuk memberikan cita rasa yang lezat dan
+                                        khas</p>
                                 </div>
                                 <div class="w-100 d-block mb-4 ps-4">
-                                    <h1 class="">Tittle</h1>
-                                    <p class="fs-5 fw-lighter">some little description about the foods...</p>
+                                    <h1 class="">Sate Tegal</h1>
+                                    <p class="fs-5 fw-lighter">Sate Tegal adalah hidangan sate yang berasal dari Tegal,
+                                        Jawa Tengah, Indonesia</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="gallery-box me-1 mb-5">
                         <div class="image-overlay">
-                            <img src="../../assets/img/1 (6).jpeg" class="rounded-4 shadow" alt="1" />
+                            <img src="../../assets/img/foods/soto kudus.jpg" class="rounded-4 shadow" alt="1" />
                             <div class="overlay rounded-4 text-wrap">
                                 <div class="overlay-all rounded-4 z-1">
-                                    <p class="p-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                                        quia tenetur
-                                        repellat. Fuga voluptatem incidunt suscipit pariatur repellendus ullam magnam
-                                        doloribus expedita
-                                        vitae quibusdam officiis minus aperiam nulla, aut nam!</p>
+                                    <p class="p-4 fs-5">Ini adalah sup ayam khas Indonesia yang dihidangkan dengan kuah
+                                        kaldu ayam yang kaya rasa dan rempah-rempah, seperti serai, daun jeruk, dan
+                                        jahe. Daging ayam biasanya dipotong kecil-kecil dan disajikan bersama dengan
+                                        tambahan seperti telur rebus, tauge, dan bawang goreng.
+                                    </p>
                                 </div>
                                 <div class="w-100 d-block mb-4 ps-4">
-                                    <h1 class="">Tittle</h1>
-                                    <p class="fs-5 fw-lighter">some little description about the foods...</p>
+                                    <h1 class="">Soto Kudus</h1>
+                                    <p class="fs-5 fw-lighter">Soto Kudus adalah masakan khas dari Kudus, Jawa Tengah,
+                                        Indonesia. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="gallery-box me-1 mb-5">
                         <div class="image-overlay">
-                            <img src="../../assets/img/1 (7).jpeg" class="rounded-4 shadow" alt="1" />
+                            <img src="../../assets/img/foods/jenang-kudus.jpg" class="rounded-4 shadow" alt="1" />
                             <div class="overlay rounded-4 text-wrap">
                                 <div class="overlay-all rounded-4 z-1">
-                                    <p class="p-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                                        quia tenetur
-                                        repellat. Fuga voluptatem incidunt suscipit pariatur repellendus ullam magnam
-                                        doloribus expedita
-                                        vitae quibusdam officiis minus aperiam nulla, aut nam!</p>
+                                    <p class="p-4 fs-5">Ini adalah bubur ketan manis yang terbuat dari beras ketan yang
+                                        dimasak dengan santan, gula merah, dan rempah-rempah seperti daun pandan. Jenang
+                                        Kudus sering disajikan sebagai hidangan penutup atau sebagai camilan
+                                        tradisional</p>
                                 </div>
                                 <div class="w-100 d-block mb-4 ps-4">
-                                    <h1 class="">Tittle</h1>
-                                    <p class="fs-5 fw-lighter">some little description about the foods...</p>
+                                    <h1 class="">Jenang Kudus</h1>
+                                    <p class="fs-5 fw-lighter">
+                                        Jenang Kudus adalah makanan khas dari Kudus, Jawa Tengah, Indonesia.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="gallery-box me-1 mb-5">
                         <div class="image-overlay">
-                            <img src="../../assets/img/1 (8).jpeg" class="rounded-4 shadow" alt="1" />
+                            <img src="../../assets/img/foods/lumpia semarang.jpg" class="rounded-4 shadow" alt="1" />
                             <div class="overlay rounded-4 text-wrap">
                                 <div class="overlay-all rounded-4 z-1">
-                                    <p class="p-4 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                                        quia tenetur
-                                        repellat. Fuga voluptatem incidunt suscipit pariatur repellendus ullam magnam
-                                        doloribus expedita
-                                        vitae quibusdam officiis minus aperiam nulla, aut nam!</p>
+                                    <p class="p-4 fs-5">Terdiri dari kulit lumpia yang diisi dengan campuran rebung,
+                                        daging/ayam/udang cincang, telur, dan rempah-rempah. Disajikan dengan saus atau
+                                        kuah khas, sering dijajakan di warung-warung dan restoran di Semarang</p>
                                 </div>
                                 <div class="w-100 d-block mb-4 ps-4">
-                                    <h1 class="">Tittle</h1>
-                                    <p class="fs-5 fw-lighter">some little description about the foods...</p>
+                                    <h1 class="">Lumpia Semarang</h1>
+                                    <p class="fs-5 fw-lighter">Lumpia Semarang adalah hidangan populer dari Semarang,
+                                        Jawa Tengah, Indonesia</p>
                                 </div>
                             </div>
                         </div>
@@ -212,74 +214,74 @@
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-bottom: -10px;">
                 <path fill="#FA991C" fill-opacity="1"
-                    d="M0,288L48,256C96,224,192,160,288,122.7C384,85,480,75,576,90.7C672,107,768,149,864,176C960,203,1056,213,1152,192C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    d="M0,224L60,229.3C120,235,240,245,360,240C480,235,600,213,720,202.7C840,192,960,192,1080,197.3C1200,203,1320,213,1380,218.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
                 </path>
             </svg>
             <section class="staggered">
-                <div class="container col-xxl-8 px-4 py-5 w-100 h-100">
-                    <div class="row d-flex align-items-center g-5 py-5 mt-5">
-                        <div class="col-10 col-sm-8 col-lg-6">
+                <div class="container col-xxl-8 px-4 pb-5 w-100 h-100">
+                    <div class="row d-flex align-items-center g-5 pb-5">
+                        <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-down" data-aos-duration="900">
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="2000">
-                                        <img src="../../assets/img/bg-masthead.jpg" class="d-block w-100"
-                                            alt="../../assets/img/bg-masthead.jpg">
+                                        <img src="../../assets/img/foods/1.jpeg" class="d-block w-100"
+                                            alt="../../assets/img/foods/1.jpeg" style="height: ">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="../../assets/img/bg-masthead.jpg" class="d-block w-100"
-                                            alt="../../assets/img/bg-masthead.jpg">
+                                        <img src="../../assets/img/foods/2.jpeg" class="d-block w-100"
+                                            alt="../../assets/img/foods/2.jpeg">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="../../assets/img/bg-masthead.jpg" class="d-block w-100"
-                                            alt="../../assets/img/bg-masthead.jpg">
+                                        <img src="../../assets/img/foods/3.jpeg" class="d-block w-100"
+                                            alt="../../assets/img/foods/3.jpeg">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 text-section-1">
-                            <h1 class="display-5 fw-bold lh-1 mb-3">Foods and drinks...</h1>
-                            <p class="lead fw-lighter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum
-                                eius facere
-                                cum dolorum nisi vel recusandae temporibus laborum voluptatibus. Cumque velit vel,
-                                dolorum fugiat
-                                dignissimos nam cupiditate ex ullam..</p>
+                        <div class="col-lg-6 text-section-1" data-aos="fade-down" data-aos-duration="900"
+                            data-aos-delay="300">
+                            <h1 class="display-5 fw-bold lh-1 mb-3">Makanan dan Minuman...</h1>
+                            <p class="lead fw-lighter">Makan dan minuman memainkan peran sentral dalam menyajikan
+                                pengalaman kuliner yang tak terlupakan. Ragam makanan dan minuman menjadi pemandangan
+                                yang memikat, mengajak untuk menjelajahi dunia rasa</p>
 
                         </div>
                     </div>
                 </div>
             </section>
+
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-top: -10px;">
                 <path fill="#FA991C" fill-opacity="1"
-                    d="M0,192L48,160C96,128,192,64,288,64C384,64,480,128,576,154.7C672,181,768,171,864,192C960,213,1056,267,1152,261.3C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    d="M0,32L48,37.3C96,43,192,53,288,64C384,75,480,85,576,74.7C672,64,768,32,864,53.3C960,75,1056,149,1152,154.7C1248,160,1344,96,1392,64L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
                 </path>
             </svg>
-
             <section class="second_section">
-                <div class="container col-xxl-8 px-4 py-5 w-100 h-100">
-                    <div class="row d-flex align-items-center g-5 py-5 mt-5">
-                        <div class="col-10 col-sm-8 col-lg-6 text-section-2">
-                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sweet and Spicy...</h1>
-                            <p class="lead fw-lighter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum
-                                eius facere
-                                cum dolorum nisi vel recusandae temporibus laborum voluptatibus. Cumque velit vel,
-                                dolorum fugiat
-                                dignissimos nam cupiditate ex ullam..</p>
+                <div class="container col-xxl-8 px-4 w-100 h-100 pb-5">
+                    <div class="row d-flex align-items-center g-5 pb-5">
+                        <div class="col-10 col-sm-8 col-lg-6 text-section-2" data-aos="fade-down"
+                            data-aos-duration="900" data-aos-delay="300">
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Manis, Pedas, dan lainya...</h1>
+                            <p class="lead fw-lighter">Manis, pedas, dan lainya... menciptakan simfoni cita rasa yang
+                                menggoda lidah dan mengundang petualangan kuliner. Dalam setiap hidangan penutup, kita
+                                menemukan kelezatan manis yang memikat hati, bersaing dengan kepedasan yang menggigit
+                                dan memberikan sensasi gigitan yang tak terlupakan.</p>
 
                         </div>
-                        <div class="col-lg-6">
-                            <div id="carouselExampleSlidesOnly" class="carousel slide rounded-3" data-bs-ride="carousel">
+                        <div class="col-lg-6" data-aos="fade-down" data-aos-duration="900" >
+                            <div id="carouselExampleSlidesOnly" class="carousel slide rounded-3"
+                                data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="2000">
-                                        <img src="../../assets/img/bg-masthead.jpg" class="d-block w-100"
-                                            alt="../../assets/img/bg-masthead.jpg">
+                                        <img src="../../assets/img/foods/4.jpeg" class="d-block w-100"
+                                            alt="../../assets/img/foods/4.jpeg">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="../../assets/img/bg-masthead.jpg" class="d-block w-100"
-                                            alt="../../assets/img/bg-masthead.jpg">
+                                        <img src="../../assets/img/foods/5.jpeg" class="d-block w-100"
+                                            alt="../../assets/img/foods/5.jpeg">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="../../assets/img/bg-masthead.jpg" class="d-block w-100"
-                                            alt="../../assets/img/bg-masthead.jpg">
+                                        <img src="../../assets/img/foods/6.jpeg" class="d-block w-100"
+                                            alt="../../assets/img/foods/6.jpeg">
                                     </div>
                                 </div>
                             </div>
@@ -343,9 +345,14 @@
 
 
     <!-- Bootstrap & Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <!-- <script src="../../assets/js/main.js"></script> -->
 </body>
 

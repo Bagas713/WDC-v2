@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import url("https://db.onlinewebfonts.com/c/996fd53e88dc843489d49583a0354b50?family=GothamRndSSm-Medium");
 
 :root {
     --index: calc(1vw + 1vh);
@@ -22,7 +22,7 @@
 
 body {
     background-color: var(--secondary-color);
-    font-family: "Open Sans", sans-serif;
+    font-family: "GothamRndSSm-Medium" !important;
     overscroll-behavior: none;
     font-weight: 300;
     overflow-x: hidden;
@@ -30,32 +30,8 @@ body {
 
 section {
     margin-bottom: 1rem;
-    
+
 }
-
-/* .cover .container .carousel {
-    height: 100vh;
-} */
-
-/* /* .cover .container .carousel .carousel-inner {
-    height: 50vh;
-    border-radius: 10px;
-} */
-
-/* .cover .container .carousel .carousel-inner .carousel-item img {
-    width: 100vw;
-    height: 80vh;
-    margin: auto;
-    object-fit: cover;
-    object-position: center;
-} */
-
-/* .cover .container .carousel .carousel-inner .carousel-item .container .carousel-caption {
-        position: absolute;
-        top: 50vh;
-        transform: translateY(-50%);
-}
- */ 
 
 .post-image {
     max-width: 20rem;
@@ -68,21 +44,33 @@ section {
 
 .row .card-custom {
     color: var(--primary-color);
-    transition: box-shadow 0.3s ease; /* Animasi transisi efek bayangan */
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan awal */
+    transition: box-shadow 0.3s ease;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-custom:hover {
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); 
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-caption {
     top: 50%;
-    /* transform: translateY(-50%); */
+}
+
+.carousel-caption .btn-custom {
+    width: 200px;
+    color: var(--secondary-color);
+    background-color: var(--button-color);
+    /* border-color: var(--secondary-color); */
+}
+
+.carousel-caption .btn-custom:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    /* border-color: var(--secondary-color); */
 }
 
 .caption-card .btn-custom {
-    width: 160px;
+    width: 200px;
     color: var(--secondary-color);
     background-color: var(--button-color);
     border-color: var(--secondary-color);
@@ -94,15 +82,14 @@ section {
     border-color: var(--secondary-color);
 }
 
-/* Pagination */
 .pagination-buttons .pagination li a {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border-color: var(--secondary-color);
     padding: 8px 16px;
-    margin: 0 4px; 
+    margin: 0 4px;
     border-radius: 4px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .pagination-buttons .pagination li.active a {
@@ -112,8 +99,8 @@ section {
 }
 
 .pagination-buttons .pagination li.disabled a {
-    pointer-events: none; 
-    opacity: 0.6; 
+    pointer-events: none;
+    opacity: 0.6;
 }
 
 .pagination-buttons .pagination li a:hover {
@@ -122,11 +109,11 @@ section {
 }
 
 .pagination-buttons .pagination li.active a:hover {
-    background-color: var(--hover-color); 
+    background-color: var(--hover-color);
     color: var(--secondary-color);
-    border-color: var(--hover-color); 
+    border-color: var(--hover-color);
 }
 
 img {
     height: 100vh;
-} 
+}

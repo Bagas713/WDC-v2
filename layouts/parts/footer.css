@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import url("https://db.onlinewebfonts.com/c/996fd53e88dc843489d49583a0354b50?family=GothamRndSSm-Medium");
 
 :root {
     --index: calc(1vw + 1vh);
@@ -54,6 +54,7 @@ body {
     background-color: var(--button-color);
     color: var(--secondary-color);
 }
+
 .footer .row button:hover {
     background-color: var(--hover-color);
     color: var(--button-color);

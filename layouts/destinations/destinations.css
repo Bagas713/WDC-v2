@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "GothamRndSSm-Medium" !important;
+}
+
 .header-nav {
   background-color: var(--primary-color-dark);
 }
@@ -117,7 +121,6 @@ a {
 }
 
 nav {
-  max-width: var(--max-width);
   margin: auto;
   padding: 2rem 1rem;
   display: flex;
@@ -266,6 +269,12 @@ nav {
 .trending__card h5 {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.trending__card h1 {
+  font-size: 2rem;
   font-weight: 500;
   color: var(--text-dark);
 }
